@@ -1,0 +1,22 @@
+{
+  "name": "eagler-ws-prox",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-12",
+  "vars": {
+    "SERVER": "free-in2.aethelgrid.cloud:3036"
+  },
+  "durable_objects": {
+    "bindings": [
+      { 
+        "name": "EAGLER_PROXY",
+        "class_name": "EaglerProxy"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["EaglerProxy"]
+    }
+  ]
+}
